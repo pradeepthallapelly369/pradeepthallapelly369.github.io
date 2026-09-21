@@ -3,142 +3,528 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pradeep Thallapelly | Senior BI Developer & Data Engineer</title>
-    <meta name="description" content="Portfolio of Pradeep Thallapelly - Senior BI Developer, Data Engineer & AI Architect based in India.">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Pradeep Thallapelly | Senior Data Engineer, BI Architect & AI Systems Lead</title>
+    <meta name="description" content="Portfolio of Pradeep Thallapelly - Senior Data Engineer, BI Architect, and AI Systems Lead with 6+ years enterprise experience in Databricks Delta Lake, dbt Core, Qlik Sense, and Autonomous AI Agent Swarms.">
+    <meta name="keywords" content="Pradeep Thallapelly, Data Engineer, BI Architect, Qlik Sense Architect, Databricks, dbt Core, OmniRoute, BharatAlpha, AI Agents, Python, FastAPI">
+    <meta name="author" content="Pradeep Thallapelly">
+    <meta name="theme-color" content="#07090e">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Pradeep Thallapelly | Senior Data Engineer, BI Architect & AI Systems Lead">
+    <meta property="og:description" content="6+ years enterprise experience in Databricks, dbt Core, Qlik Sense, and AI Agent Swarms. Explore featured architectures including OmniRoute and BharatAlpha.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pradeepthallapelly369.github.io/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Particle Canvas -->
     <div id="particles-js"></div>
     
-    <nav class="navbar">
+    <!-- Ambient Glow Elements -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
         <div class="nav-content">
-            <div class="logo">PT<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#home" class="logo" id="logo">
+                <span class="logo-symbol">&lt;/&gt;</span> Pradeep<span class="highlight">.AI</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Arsenal</a></li>
+                    <li><a href="#architectures" class="nav-link">Architectures</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="status-pill">
+                    <span class="status-dot"></span> Open for Remote / Visa
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="name">Pradeep Thallapelly</h1>
-                <h2 class="title">
-                    <span class="typewriter">Senior Data Engineer & BI Architect</span>
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Enterprise Data Engineering · BI Architecture · Autonomous Agentic AI</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I am <span class="name-gradient">Pradeep Thallapelly</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    <span class="typewriter-prefix">I architect </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
                 </h2>
-                <p class="summary">
-                    6+ years of expertise delivering enterprise analytics for banking & insurance clients.<br>
-                    Specializing in <strong>Qlik Sense</strong>, <strong>Databricks</strong>, <strong>dbt Core</strong>, and <strong>AI Agent</strong> integrations.
+
+                <p class="hero-description">
+                    <strong>6+ years of enterprise mastery</strong> delivering scalable data platforms for Tier-1 UK Banking & Global Insurance giants. 
+                    Specializing in <strong>Databricks Delta Lake</strong>, <strong>dbt Core</strong>, <strong>Qlik Sense Architecture</strong>, 
+                    and resilient <strong>Autonomous AI Agent Ecosystems</strong>.
                 </p>
+
                 <div class="hero-actions">
-                    <a href="#contact" class="btn primary">Hire Me (Remote/Visa)</a>
-                    <a href="https://github.com/pradeepthallapelly369" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/pradeep-thallapelly-890b17312" target="_blank" class="btn secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#architectures" class="btn btn-primary" id="btn-architectures">
+                        <i class="fas fa-layer-group"></i> Explore Architectures
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-contact">
+                        <i class="fas fa-paper-plane"></i> Hire Me (Remote/Visa)
+                    </a>
+                    <div class="social-pills">
+                        <a href="https://github.com/pradeepthallapelly369" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/pradeep-thallapelly-890b17312" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:pradeep.thallapelly369@outlook.com" class="social-icon" title="Direct Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- High-Impact Telemetry Stats Bar -->
+                <div class="telemetry-bar">
+                    <div class="telemetry-item">
+                        <span class="telemetry-val">6+</span>
+                        <span class="telemetry-label">Years Enterprise Exp</span>
+                    </div>
+                    <div class="telemetry-divider"></div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-val">100+</span>
+                        <span class="telemetry-label">Enterprise Dashboards</span>
+                    </div>
+                    <div class="telemetry-divider"></div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-val">~1.51B</span>
+                        <span class="telemetry-label">Monthly AI Tokens Routed</span>
+                    </div>
+                    <div class="telemetry-divider"></div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-val">30%</span>
+                        <span class="telemetry-label">Query Speedup Achieved</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-glow"></div>
         </section>
 
-        <!-- Core Skills -->
+        <!-- Core Arsenal Section -->
         <section id="about" class="section">
-            <h3 class="section-title">Core <span class="highlight">Arsenal</span></h3>
+            <div class="section-header">
+                <p class="section-tag">COMPETENCY MATRIX</p>
+                <h3 class="section-title">Core <span class="highlight">Technical Arsenal</span></h3>
+                <p class="section-subtitle">Bridging industrial-grade big data pipelines with state-of-the-art agentic AI systems.</p>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-chart-pie skill-icon"></i>
-                    <h4>BI & Analytics</h4>
-                    <p>Qlik Sense Architect, Power BI, Dashboard UX, NPrinting, Set Analysis.</p>
+                <div class="skill-card glass">
+                    <div class="skill-icon-wrapper ai-color">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>AI Agents & LLMOps</h4>
+                    <p>Building autonomous multi-agent swarms, unified model gateways, and local offline inference pipelines.</p>
+                    <div class="skill-tags">
+                        <span>OmniRoute Gateway</span>
+                        <span>Claude Code</span>
+                        <span>Antigravity</span>
+                        <span>AirLLM 70B</span>
+                        <span>MCP Protocol</span>
+                        <span>DeepSeek R1</span>
+                        <span>OpenRouter</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database skill-icon"></i>
-                    <h4>Data Engineering</h4>
-                    <p>Databricks Delta Lake, dbt Core, SQL, Data Modeling (Star/Snowflake).</p>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon-wrapper data-color">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Data Engineering & Lakehouse</h4>
+                    <p>Modern medallion data lakehouse pipelines with ACID Delta tables and automated dbt modeling.</p>
+                    <div class="skill-tags">
+                        <span>Databricks</span>
+                        <span>Delta Lake</span>
+                        <span>dbt Core</span>
+                        <span>Apache Spark</span>
+                        <span>Advanced SQL</span>
+                        <span>Medallion Architecture</span>
+                        <span>Data Modeling</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain skill-icon"></i>
-                    <h4>AI & Agents</h4>
-                    <p>Agentic AI, MCP Servers, OpenRouter, Claude, LLM Automations.</p>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon-wrapper bi-color">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h4>Enterprise BI & Analytics</h4>
+                    <p>High-concurrency enterprise dashboard design, complex set analysis, and QVD data modeling.</p>
+                    <div class="skill-tags">
+                        <span>Qlik Sense Architect</span>
+                        <span>Power BI</span>
+                        <span>NPrinting</span>
+                        <span>Set Analysis</span>
+                        <span>Figma to BI UX</span>
+                        <span>Performance Tuning</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h4>Development</h4>
-                    <p>Python, FastAPI, Git, GitHub Actions, Docker, API Integration.</p>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon-wrapper backend-color">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend & Cloud Platforms</h4>
+                    <p>Asynchronous APIs, real-time event streaming, containerization, and automated DevOps workflows.</p>
+                    <div class="skill-tags">
+                        <span>Python 3.12+</span>
+                        <span>FastAPI</span>
+                        <span>React 18 / Vite</span>
+                        <span>SQLite & Postgres</span>
+                        <span>Docker</span>
+                        <span>Git & GitHub Actions</span>
+                        <span>Linux Shell</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Timeline -->
+        <!-- Featured Architectures Section -->
+        <section id="architectures" class="section">
+            <div class="section-header">
+                <p class="section-tag">PRODUCTION SYSTEMS</p>
+                <h3 class="section-title">Featured <span class="highlight">Architectures</span></h3>
+                <p class="section-subtitle">Real-world production platforms, algorithmic engines, and autonomous systems.</p>
+            </div>
+
+            <!-- Category Filter Bar -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="ai">AI & Agents</button>
+                <button class="filter-btn" data-filter="data">Data & Lakehouse</button>
+                <button class="filter-btn" data-filter="quant">FinTech & Quant</button>
+                <button class="filter-btn" data-filter="bi">Enterprise BI</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 1. OmniRoute -->
+                <article class="project-card glass" data-category="ai">
+                    <div class="project-top">
+                        <div class="project-badge pulse-badge">Flagship Gateway</div>
+                        <a href="https://github.com/pradeepthallapelly369/OmniRoute" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="OmniRoute GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-network-wired project-icon ai-color"></i>
+                        <h4>OmniRoute — The Free AI Gateway</h4>
+                    </div>
+                    <p class="project-desc">
+                        High-capacity unified AI proxy routing Claude Code, Cursor, Codex, and Antigravity into <strong>352 providers (90+ free tiers)</strong> with ~1.51B monthly free tokens, smart fallback cascade, and <strong>15–95% token compression (~89% avg)</strong>.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Catalogs 455 free-tier entries behind a single endpoint</li>
+                        <li><i class="fas fa-check-circle"></i> Zero-downtime automatic cross-provider cascade</li>
+                        <li><i class="fas fa-check-circle"></i> RTK + Caveman stacked compression engine</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Next.js</span><span>FastAPI</span><span>Model Router</span><span>Prompt Compression</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/OmniRoute" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. BharatAlpha AI -->
+                <article class="project-card glass" data-category="quant ai">
+                    <div class="project-top">
+                        <div class="project-badge quant-badge">Algorithmic Quant</div>
+                        <a href="https://github.com/pradeepthallapelly369/BharatAlpha-AI-Trading-Engine" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="BharatAlpha GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-chart-line project-icon quant-color"></i>
+                        <h4>BharatAlpha AI Trading Engine</h4>
+                    </div>
+                    <p class="project-desc">
+                        Institutional-grade Indian equity (NSE/BSE) & options platform pairing 50-year fundamental wisdom with a <strong>4-agent autonomous swarm</strong>, live Fyers/Zerodha broker APIs, and real-time <strong>Black-Scholes Greeks</strong>.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Multi-agent swarm (Chanakya, Arya, Vikram, Kautilya)</li>
+                        <li><i class="fas fa-check-circle"></i> Live option chain with Delta/Theta/IV calculations</li>
+                        <li><i class="fas fa-check-circle"></i> Interactive strategy payoff curves & risk guardrails</li>
+                    </ul>
+                    <div class="tags">
+                        <span>FastAPI</span><span>React 18</span><span>Vite</span><span>Black-Scholes</span><span>Fyers API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/BharatAlpha-AI-Trading-Engine" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. GlobalCareer AI Engine -->
+                <article class="project-card glass" data-category="ai">
+                    <div class="project-top">
+                        <div class="project-badge ai-badge">Autonomous AutoOps</div>
+                        <a href="https://github.com/pradeepthallapelly369/GlobalCareer-AI-Engine" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GlobalCareer GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-globe-americas project-icon ai-color"></i>
+                        <h4>GlobalCareer AI Engine</h4>
+                    </div>
+                    <p class="project-desc">
+                        Autonomous career intelligence platform scouting <strong>worldwide remote (USD/EUR/GBP) and visa-sponsored</strong> roles, generating JD-tailored ATS resumes, and managing the end-to-end recruitment pipeline.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Multi-portal job radar streaming foreign currency roles</li>
+                        <li><i class="fas fa-check-circle"></i> LLM-driven ATS resume & cold email pitch generation</li>
+                        <li><i class="fas fa-check-circle"></i> Integrated SQLite application lifecycle tracker</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>FastAPI</span><span>OpenRouter</span><span>ATS Scoring</span><span>SQLite</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/GlobalCareer-AI-Engine" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. AetherMind 70B -->
+                <article class="project-card glass" data-category="ai">
+                    <div class="project-top">
+                        <div class="project-badge ai-badge">Offline + Cloud Hybrid</div>
+                        <a href="https://github.com/pradeepthallapelly369/AetherMind-70B-Agent" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="AetherMind GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-microchip project-icon ai-color"></i>
+                        <h4>AetherMind 70B AI Agent</h4>
+                    </div>
+                    <p class="project-desc">
+                        100% offline local AI infrastructure utilizing layer-wise execution to run <strong>70B parameter models (DeepSeek-R1, Llama 3.3)</strong> on consumer hardware, paired with a sub-3s cloud fast-path fallback.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Layer-wise execution via AirLLM on standard VRAM</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time Server-Sent Events (SSE) token streaming</li>
+                        <li><i class="fas fa-check-circle"></i> Dynamic memory telemetry & hardware diagnostics</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>AirLLM</span><span>Flask</span><span>SSE</span><span>DeepSeek R1</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/AetherMind-70B-Agent" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. dbt + Databricks Lakehouse -->
+                <article class="project-card glass" data-category="data bi">
+                    <div class="project-top">
+                        <div class="project-badge data-badge">Lakehouse Architecture</div>
+                        <a href="https://github.com/pradeepthallapelly369/dbt-databricks-lakehouse-pipeline" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="dbt Databricks GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-database project-icon data-color"></i>
+                        <h4>dbt + Databricks Lakehouse Pipeline</h4>
+                    </div>
+                    <p class="project-desc">
+                        Production data engineering framework transitioning monolithic legacy Qlik ETL scripts into modular, tested <strong>dbt Core SQL models</strong> on Databricks Delta Lake with AI agent automated reconciliation.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Medallion staging (Bronze) to marts (Gold) modeling</li>
+                        <li><i class="fas fa-check-circle"></i> AI agent automated parity checking between ETL layers</li>
+                        <li><i class="fas fa-check-circle"></i> Complete CI/CD integration with automated testing</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Databricks</span><span>Delta Lake</span><span>dbt Core</span><span>Apache Spark</span><span>SQL</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/dbt-databricks-lakehouse-pipeline" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. QlikHunter Engine -->
+                <article class="project-card glass" data-category="bi ai">
+                    <div class="project-top">
+                        <div class="project-badge bi-badge">BI Automation</div>
+                        <a href="https://github.com/pradeepthallapelly369/QlikHunter-Automation-Engine" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="QlikHunter GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-icon-title">
+                        <i class="fas fa-search-dollar project-icon bi-color"></i>
+                        <h4>QlikHunter Automation Engine</h4>
+                    </div>
+                    <p class="project-desc">
+                        Intelligent autonomous scout crawling global portals for enterprise Qlik Sense & BI opportunities, performing semantic LLM candidate-fit scoring, and broadcasting scheduled Jinja2 HTML email digests.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Multi-portal aggregation (LinkedIn, Remotive, Upwork)</li>
+                        <li><i class="fas fa-check-circle"></i> Heuristic pattern matching & LLM suitability scoring</li>
+                        <li><i class="fas fa-check-circle"></i> Automated daily Jinja2 HTML digest with direct apply links</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>BeautifulSoup</span><span>OpenRouter</span><span>Jinja2</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/pradeepthallapelly369/QlikHunter-Automation-Engine" target="_blank" rel="noopener noreferrer" class="btn-card">
+                            View Architecture <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Professional Journey / Experience Section -->
         <section id="experience" class="section">
-            <h3 class="section-title">Professional <span class="highlight">Journey</span></h3>
+            <div class="section-header">
+                <p class="section-tag">TRACK RECORD</p>
+                <h3 class="section-title">Professional <span class="highlight">Journey</span></h3>
+                <p class="section-subtitle">6+ years spearheading enterprise analytics transformations and data migrations.</p>
+            </div>
+
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass">
-                        <span class="date">Sep 2025 – Present</span>
+                        <div class="timeline-header">
+                            <span class="date">Sep 2025 – Present</span>
+                            <span class="role-badge">Current Role</span>
+                        </div>
                         <h4>Technical Lead | Data Engineer</h4>
                         <h5>IFINGlobal Group</h5>
-                        <p>Leading end-to-end Qlik Sense to Databricks SQL migrations. Architecting dbt models and integrating AI agents for automated data reconciliation.</p>
+                        <p class="timeline-desc">
+                            Spearheading end-to-end legacy Qlik Sense to Databricks SQL migrations. Architecting dbt models and integrating autonomous AI agents for zero-data-loss validation during ETL cutover cycles.
+                        </p>
+                        <div class="tags">
+                            <span>Databricks</span><span>dbt Core</span><span>Delta Lake</span><span>AI Reconciliation</span><span>Python</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass">
-                        <span class="date">Jan 2025 – Sep 2025</span>
+                        <div class="timeline-header">
+                            <span class="date">Jan 2025 – Sep 2025</span>
+                        </div>
                         <h4>Business Intelligence Engineer</h4>
                         <h5>Exponentia.ai</h5>
-                        <p>Migrated 20+ legacy dashboards to Qlik Sense. Engineered insurance analytics pipelines and translated Figma UX to production BI applications.</p>
+                        <p class="timeline-desc">
+                            Engineered insurance analytics pipelines and migrated 20+ legacy dashboards to modern Qlik Sense apps. Translated Figma design specifications into high-performance, pixel-perfect executive BI solutions.
+                        </p>
+                        <div class="tags">
+                            <span>Qlik Sense</span><span>Insurance Analytics</span><span>Data Pipelines</span><span>Figma to BI</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass">
-                        <span class="date">Jun 2020 – Sep 2024</span>
+                        <div class="timeline-header">
+                            <span class="date">Jun 2020 – Sep 2024</span>
+                            <span class="role-badge">4+ Years</span>
+                        </div>
                         <h4>Consultant — BI Developer</h4>
-                        <h5>VRJ Technologies Pvt. Ltd. (UK Banking Client)</h5>
-                        <p>Designed 100+ enterprise Qlik Sense dashboards for a top-tier UK Bank. Improved performance by ~30% and reduced data redundancy by 20%.</p>
+                        <h5>VRJ Technologies Pvt. Ltd. (Tier-1 UK Banking Client)</h5>
+                        <p class="timeline-desc">
+                            Designed and maintained 100+ enterprise Qlik Sense dashboards for a premier UK Banking client. Re-architected QVD data structures to reduce data redundancy by 20% and boosted dashboard query speeds by ~30%.
+                        </p>
+                        <div class="tags">
+                            <span>Qlik Sense Architect</span><span>UK Banking</span><span>Set Analysis</span><span>QVD Optimization</span><span>NPrinting</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <h3 class="section-title">Featured <span class="highlight">Architectures</span></h3>
-            <div class="projects-grid">
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <i class="fas fa-robot project-icon"></i>
-                        <a href="https://github.com/pradeepthallapelly369/BharatAlpha-AI-Trading-Engine" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <!-- Certifications & Credentials Section -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <p class="section-tag">ACCREDITATIONS</p>
+                <h3 class="section-title">Verified <span class="highlight">Certifications</span></h3>
+                <p class="section-subtitle">Formal credentials validating industry-standard expertise.</p>
+            </div>
+
+            <div class="certs-grid">
+                <div class="cert-card glass">
+                    <div class="cert-icon-box qlik-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <h4>BharatAlpha AI Trading Engine</h4>
-                    <p>Institutional quantitative platform with multi-agent AI swarms, live broker API execution, and Black-Scholes options greek calculations.</p>
-                    <div class="tags"><span>FastAPI</span><span>React</span><span>AI Agents</span></div>
+                    <div class="cert-details">
+                        <h4>Qlik Sense Data Architect Qualification</h4>
+                        <p class="cert-issuer">Qlik · Verified 2025</p>
+                        <span class="cert-badge">Credential Verified</span>
+                    </div>
                 </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <i class="fas fa-microchip project-icon"></i>
-                        <a href="https://github.com/pradeepthallapelly369/AetherMind-70B-Agent" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="cert-card glass">
+                    <div class="cert-icon-box qlik-icon">
+                        <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h4>AetherMind 70B Agent</h4>
-                    <p>100% offline local AI infrastructure using layer-wise inference to run 70B parameter LLMs (DeepSeek-R1) on consumer hardware.</p>
-                    <div class="tags"><span>Python</span><span>AirLLM</span><span>SSE</span></div>
+                    <div class="cert-details">
+                        <h4>Qlik Sense Business Analyst Qualification</h4>
+                        <p class="cert-issuer">Qlik · Enterprise Analytics</p>
+                        <span class="cert-badge">Credential Verified</span>
+                    </div>
                 </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <i class="fas fa-globe project-icon"></i>
-                        <a href="https://github.com/pradeepthallapelly369/GlobalCareer-AI-Engine" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="cert-card glass">
+                    <div class="cert-icon-box databricks-icon">
+                        <i class="fas fa-fire"></i>
                     </div>
-                    <h4>GlobalCareer AI Engine</h4>
-                    <p>Autonomous web scraper and auto-application pipeline fetching remote USD roles and generating tailored ATS resumes via AI.</p>
-                    <div class="tags"><span>FastAPI</span><span>SQLite</span><span>Prompt Engineering</span></div>
+                    <div class="cert-details">
+                        <h4>Databricks Fundamentals Accreditation</h4>
+                        <p class="cert-issuer">Databricks Academy · Lakehouse Platform</p>
+                        <span class="cert-badge">Credential Verified</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass">
+                    <div class="cert-icon-box ai-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h4>Generative AI & Agentic Systems</h4>
+                        <p class="cert-issuer">Advanced Autonomous Architectures</p>
+                        <span class="cert-badge">Specialization</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,19 +532,60 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <div class="contact-box glass">
-                <h2>Let's Build Together</h2>
-                <p>I'm actively seeking remote opportunities (USD/EUR) or international visa sponsorship roles. My timezone allows substantial overlap with US and EU business hours.</p>
-                <div class="contact-info">
-                    <a href="mailto:pradeep.thallapelly369@outlook.com" class="contact-link"><i class="fas fa-envelope"></i> pradeep.thallapelly369@outlook.com</a>
-                    <a href="tel:+918886551138" class="contact-link"><i class="fas fa-phone"></i> +91-8886551138</a>
+                <div class="contact-badge">LET US CONNECT</div>
+                <h2>Ready to Build Something Extraordinary?</h2>
+                <p>
+                    I am actively seeking <strong>Global Remote (USD / EUR / GBP)</strong> opportunities or international roles with <strong>visa sponsorship</strong>. 
+                    Based in Hyderabad, India (IST), with seamless operational overlap across US (EST/PST) and European business hours.
+                </p>
+
+                <div class="contact-grid">
+                    <a href="mailto:pradeep.thallapelly369@outlook.com" class="contact-card glass" id="contact-email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email Me</span>
+                            <span class="contact-val">pradeep.thallapelly369@outlook.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+918886551138" class="contact-card glass" id="contact-phone">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Call / WhatsApp</span>
+                            <span class="contact-val">+91-8886551138</span>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/pradeep-thallapelly-890b17312" target="_blank" rel="noopener noreferrer" class="contact-card glass" id="contact-linkedin">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-val">pradeep-thallapelly</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/pradeepthallapelly369" target="_blank" rel="noopener noreferrer" class="contact-card glass" id="contact-github">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-val">@pradeepthallapelly369</span>
+                        </div>
+                    </a>
                 </div>
-                <p class="cert-note"><em>Verified Certifications: Qlik Sense Data Architect (2025) & Databricks Fundamentals</em></p>
+
+                <div class="timezone-note">
+                    <i class="fas fa-globe"></i>
+                    <span><strong>Global Availability:</strong> 4+ hours daily synchronous overlap with US (EST) and 6+ hours with UK / EU business hours.</span>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Pradeep Thallapelly. Engineered with passion and modern web technologies.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>Pradeep Thallapelly</strong>. Engineered with modern web standards and passion.</p>
+            <p class="footer-sub">Hyderabad, India · Open to Relocation & Worldwide Remote Roles</p>
+        </div>
     </footer>
 
     <!-- Particles.js for background animation -->
